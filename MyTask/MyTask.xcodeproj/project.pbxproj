@@ -58,16 +58,80 @@
 		B459F07A2A0B990B000231EC /* MyTask */ = {
 			isa = PBXGroup;
 			children = (
-				B459F07B2A0B990B000231EC /* AppDelegate.swift */,
-				B459F07D2A0B990B000231EC /* SceneDelegate.swift */,
-				B459F07F2A0B990B000231EC /* TaskViewController.swift */,
-				B459F08F2A0B9FC7000231EC /* TaskViewControllerRootView.swift */,
-				B459F0912A0BA14B000231EC /* TaskTableViewCell.swift */,
-				B459F0842A0B990D000231EC /* Assets.xcassets */,
-				B459F0862A0B990D000231EC /* LaunchScreen.storyboard */,
-				B459F0892A0B990D000231EC /* Info.plist */,
+				B459F0942A0BAA19000231EC /* App */,
+				B459F0932A0BA9EF000231EC /* Resources */,
+				B459F0952A0BAA2F000231EC /* Environments */,
 			);
 			path = MyTask;
+			sourceTree = "<group>";
+		};
+		B459F0932A0BA9EF000231EC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B459F0842A0B990D000231EC /* Assets.xcassets */,
+				B459F0862A0B990D000231EC /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B459F0942A0BAA19000231EC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B459F07B2A0B990B000231EC /* AppDelegate.swift */,
+				B459F07D2A0B990B000231EC /* SceneDelegate.swift */,
+				B459F09A2A0BAABD000231EC /* Entity */,
+				B459F0962A0BAA50000231EC /* Flows */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B459F0952A0BAA2F000231EC /* Environments */ = {
+			isa = PBXGroup;
+			children = (
+				B459F0892A0B990D000231EC /* Info.plist */,
+			);
+			path = Environments;
+			sourceTree = "<group>";
+		};
+		B459F0962A0BAA50000231EC /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				B459F0972A0BAA7A000231EC /* Task */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		B459F0972A0BAA7A000231EC /* Task */ = {
+			isa = PBXGroup;
+			children = (
+				B459F0992A0BAA99000231EC /* View */,
+				B459F0982A0BAA83000231EC /* Controller */,
+			);
+			path = Task;
+			sourceTree = "<group>";
+		};
+		B459F0982A0BAA83000231EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B459F07F2A0B990B000231EC /* TaskViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B459F0992A0BAA99000231EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B459F08F2A0B9FC7000231EC /* TaskViewControllerRootView.swift */,
+				B459F0912A0BA14B000231EC /* TaskTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B459F09A2A0BAABD000231EC /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
