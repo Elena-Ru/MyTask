@@ -14,6 +14,8 @@
 		B459F0882A0B990D000231EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B459F0862A0B990D000231EC /* LaunchScreen.storyboard */; };
 		B459F0902A0B9FC7000231EC /* TaskViewControllerRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459F08F2A0B9FC7000231EC /* TaskViewControllerRootView.swift */; };
 		B459F0922A0BA14B000231EC /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459F0912A0BA14B000231EC /* TaskTableViewCell.swift */; };
+		B459F09E2A0BABDA000231EC /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459F09D2A0BABD9000231EC /* Task.swift */; };
+		B459F0A02A0BAC6C000231EC /* CompositeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459F09F2A0BAC6C000231EC /* CompositeTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B459F0892A0B990D000231EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B459F08F2A0B9FC7000231EC /* TaskViewControllerRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewControllerRootView.swift; sourceTree = "<group>"; };
 		B459F0912A0BA14B000231EC /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		B459F09D2A0BABD9000231EC /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B459F09F2A0BAC6C000231EC /* CompositeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		B459F09A2A0BAABD000231EC /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				B459F09D2A0BABD9000231EC /* Task.swift */,
+				B459F09F2A0BAC6C000231EC /* CompositeTask.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -208,7 +214,9 @@
 				B459F0802A0B990B000231EC /* TaskViewController.swift in Sources */,
 				B459F0922A0BA14B000231EC /* TaskTableViewCell.swift in Sources */,
 				B459F07C2A0B990B000231EC /* AppDelegate.swift in Sources */,
+				B459F09E2A0BABDA000231EC /* Task.swift in Sources */,
 				B459F07E2A0B990B000231EC /* SceneDelegate.swift in Sources */,
+				B459F0A02A0BAC6C000231EC /* CompositeTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +357,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AD4W7X6593;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyTask/Info.plist;
+				INFOPLIST_FILE = MyTask/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -376,7 +384,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = AD4W7X6593;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyTask/Info.plist;
+				INFOPLIST_FILE = MyTask/Environments/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
