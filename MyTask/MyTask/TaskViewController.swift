@@ -29,9 +29,26 @@ class TaskViewController: UIViewController {
   
   //MARK: ObjCMethods
   @objc private func dismissSelf() {
-    print("add")
+    let alert = UIAlertController(title: "Add new task", message: "Lets type smth", preferredStyle: .alert)
+    
+    alert.addTextField { field in
+      field.placeholder = "Task 1"
+      field.returnKeyType = .continue
+    }
+    
+    alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
+    alert.addAction(UIAlertAction(title: "Continue", style: .default, handler: { _ in
+      guard let field = alert.textFields else { return }
+      let taskField = field[0]
+      guard let task = taskField.text, !task.isEmpty else {
+        print("Empty textfield")
+        return
+      }
+      print("task - \(task)")
+    }))
+    
+    present(alert, animated: true)
   }
-  
 }
 
 //MARK: Extensions
